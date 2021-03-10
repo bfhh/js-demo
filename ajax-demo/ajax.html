@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    //send ajax get request
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost/api/power/list",
+            dataType: "json",
+            data: {"pageSize": 10, "currentPage": 1},
+            success: function (data) {
+                alert(JSON.stringify(data))
+
+                //如果返回的是json对象可以直接data.属性访问
+            },
+            error: function (err) {
+                alert(JSON.stringify(err))
+            }
+        });
+    }
+</script>
+</html>
