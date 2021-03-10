@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Modal Example</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <table>
+                        <tbody>
+                        <tr>
+                            <td width="190" align="right">交易标识</td>
+                            <td><span class="tx">0x3a685fa1bbbdbfa5c32a240391cf85d5f4ce5cbb7d5da48ef7e65313e4c984cc</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">交易状态</td>
+                            <td><span class="status success">成功</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">区块高度</td>
+                            <td><a class="blockNumber" href="/blocks/12009652" target="_blank">12009652</a></td>
+                        </tr>
+                        <tr>
+                            <td align="right">交易时间</td>
+                            <td><span class="timestamp">2021-03-10 16:09:37</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">发送方</td>
+                            <td><a class="from" href="/accounts/0xb1adceddb2941033a090dd166a462fe1c2029484" target="_blank">0xb1adceddb2941033a090dd166a462fe1c2029484</a></td>
+                        </tr>
+                        <tr>
+                            <td align="right">接收方</td>
+                            <td><a class="to" href="/accounts/0x7a250d5630b4cf539739df2c5dacb4c659f2488d" target="_blank">0x7a250d5630b4cf539739df2c5dacb4c659f2488d</a></td>
+                        </tr>
+                        <tr>
+                            <td align="right">交易量</td>
+                            <td><span class="value">86.73063497372488 ETH ($157551.40)</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">燃料上限</td>
+                            <td><span class="gasLimit">175602</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">燃料消耗</td>
+                            <td><span class="gasUsed">134101 (76.37%)</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">燃料价格</td>
+                            <td><span class="gasPrice">0.000000138 ETH (138 Gwei)</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">累积燃料消耗</td>
+                            <td><span class="cumulativeGasUsed">3799583</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">交易费用</td>
+                            <td><span class="txFee">0.018505938 ETH ($33.62)</span></td>
+                        </tr>
+                        <tr>
+                            <td align="right">操作数</td>
+                            <td><span class="nonce">17364</span></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

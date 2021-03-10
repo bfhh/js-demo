@@ -26,5 +26,13 @@
             }
         });
     })
+
+
+    //使用父元素绑定事件，动态拼接的元素找不到
+    $('#content').on('click', 'button', function () {
+        alert(1)
+    });
+
+
 </script>
 </html>
